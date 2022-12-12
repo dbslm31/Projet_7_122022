@@ -1,0 +1,22 @@
+.footer {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 50px;
+    width: 100%;
+
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.footer-copyright {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}

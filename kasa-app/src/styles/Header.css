@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 200px 40px 230px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu-item>a {
+    margin-right: 40px;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.menu-item>a:hover {
+    color: #FF6060;
+    text-decoration: underline;
+
+}
+
+.header-logo {
+    width: 150px;
+}
