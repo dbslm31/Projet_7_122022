@@ -7,7 +7,7 @@ function Banner(props) {
             <div className='img-container'>
                 <img src={props.img} alt='Banner' className='banner' />
                 <div className="color-overlay"></div>
-                <p className="banner-overlay">Chez vous, partout et ailleurs</p>
+                <p className="banner-overlay">{props.title}</p>
 
             </div>
         </div>
