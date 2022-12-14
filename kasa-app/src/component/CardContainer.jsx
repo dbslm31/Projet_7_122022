@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from "./Card"
-import '../styles/Body.css'
+import '../styles/Card-Container.css'
 import houses from "../houses"
 
 function createCard(house) {
@@ -13,7 +13,7 @@ function createCard(house) {
 }
 
 
-function Body() {
+function cardContainer() {
     return (
 
         <div className='card-container'>
@@ -24,4 +24,4 @@ function Body() {
 
 }
 
-export default Body
+export default cardContainer;

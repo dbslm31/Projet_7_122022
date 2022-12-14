@@ -1,6 +1,5 @@
 import Header from "./Header"
-import Banner from "./Banner"
-import Body from "./Body"
+import Home from "./Home"
 import Footer from "./Footer"
 
 
@@ -10,8 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Banner />
-      <Body />
+      <Home />
       <Footer />
     </div>
   );
