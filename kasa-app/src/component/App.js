@@ -2,7 +2,9 @@ import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
 import Error404 from "./Error404";
+import House from "./House";
 import Footer from "./Footer";
+import houses from "../houses"
 import { Routes, Route } from "react-router-dom"
 
 
@@ -16,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<About />} />
-        <Route path="/404" element={<Error404 />} />
+        <Route path="/*" element={<Error404 />} />
+        <Route path="/logement/:id" element={<House />} />
       </Routes>
       <Footer />
     </div>

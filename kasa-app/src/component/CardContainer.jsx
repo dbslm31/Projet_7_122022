@@ -6,6 +6,7 @@ import houses from "../houses"
 function createCard(house) {
     return <Card
         key={house.id}
+        id={house.id}
         title={house.title}
         img={house.cover}
     />

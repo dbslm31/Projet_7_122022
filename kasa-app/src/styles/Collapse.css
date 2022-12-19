@@ -7,8 +7,7 @@
     margin-top: 40px;
 }
 
-.collapse-btn,
-.collapse-btn:active {
+.open-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,10 +23,20 @@
 }
 
 
-.arrow-vector {
-    transform: scaleX(-1);
+img.open-arrow {
+    transform: rotate(0deg);
+    transition: ease 0.5s;
 }
 
+img.closed-arrow {
+    transform: rotate(180deg);
+    transition: ease 0.5s;
+}
+
+.hidden-content {
+    height: 0px;
+    overflow: hidden;
+}
 
 .collapse-content {
     background: #F7F7F7;
@@ -40,4 +49,5 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 142.6%;
+
 }
