@@ -1,4 +1,4 @@
-.accordion {
+.collapse {
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -7,8 +7,8 @@
     margin-top: 40px;
 }
 
-.accordion-btn,
-.accordion-btn:active {
+.collapse-btn,
+.collapse-btn:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,7 +29,7 @@
 }
 
 
-.accordion-content {
+.collapse-content {
     background: #F7F7F7;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
