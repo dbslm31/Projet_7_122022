@@ -1,0 +1,21 @@
+.tag-item {
+    margin: auto;
+    padding-top: 3px;
+    color: white;
+    width: 115px;
+    height: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.tag-item-container {
+
+    background: #FF6060;
+    border-radius: 10px;
+    margin-right: 10px;
+
+}

@@ -1,0 +1,70 @@
+.house-columns {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1240px;
+}
+
+.house-left-column {
+    width: 50%;
+
+}
+
+.house-right-column {
+    width: 50%;
+
+}
+
+.house-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.house-location {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    color: #FF6060;
+}
+
+.house-host {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.host-name {
+    margin-left: 450px;
+    margin-right: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #FF6060;
+}
+
+.host-pic {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.house-tags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 23px;
+
+}

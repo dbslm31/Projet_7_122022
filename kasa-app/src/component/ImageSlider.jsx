@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slide from "./Slide"
+import Slide from "./Slide";
 import houses from "../houses"
 
 
@@ -9,6 +9,7 @@ function createSlide(house) {
     return <Slide
         key={house.id}
         img={house.pictures}
+
     />
 
 }
