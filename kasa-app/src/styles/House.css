@@ -68,3 +68,30 @@
     margin-top: 23px;
 
 }
+
+.image-slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 415px;
+    overflow: visible;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: red;
+    cursor: pointer;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(180deg);
+    background-color: red;
+    cursor: pointer;
+}

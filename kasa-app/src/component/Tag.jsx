@@ -1,5 +1,4 @@
 import React from 'react';
-import houses from "../houses";
 import '../styles/Tag.css'
 
 

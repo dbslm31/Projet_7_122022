@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from "react-router-dom";
-import ImageSlider from "./ImageSlider";
+import Slider from "./Slider";
 import Collapse from "./Collapse"
 import Tag from "./Tag"
+import Rating from "./Rating"
+import SliderArrow from "../assets/slider-arrow.svg"
 import houses from "../houses";
 import '../styles/House.css'
 
@@ -11,13 +13,19 @@ function House() {
     let { id } = useParams();
 
     const result = houses.filter(
-        house => house.id === id)
+        house => house.id === id);
 
-    const selectedHouse = result[0]
+    const selectedHouse = result[0];
+
 
     return (
         <div className='house-container'>
             <div className='image-slider'>
+                <img src={SliderArrow} alt='Slider Arrow Left' className='arrow-left' />
+
+                <Slider />
+
+                <img src={SliderArrow} alt='Slider Arrow Right' className='arrow-right' />
             </div>
 
             <div className='house-columns'>
@@ -29,7 +37,7 @@ function House() {
                         {selectedHouse.location}
                     </div>
                     <div className="house-tags">
-                        {selectedHouse.tags.map(tag => (
+                        {selectedHouse.tags.map((tag, index) => (
                             <Tag
                                 tag={tag}
                             />
@@ -50,7 +58,7 @@ function House() {
                         <p className='host-name'>{selectedHouse.host.name}</p>
                     </div>
                     <div className='house-rating'>
-                        {selectedHouse.rating}
+                        <Rating />
                     </div>
                     <div className="house-equipments">
                         <Collapse

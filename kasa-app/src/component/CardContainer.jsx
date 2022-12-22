@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from "./Card"
-import '../styles/Card-Container.css'
-import houses from "../houses"
+import Card from "./Card";
+import '../styles/Card-Container.css';
+import houses from "../houses";
 
 function createCard(house) {
     return <Card
