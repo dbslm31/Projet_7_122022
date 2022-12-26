@@ -1,28 +1,43 @@
-import React from 'react';
-import { useParams } from "react-router-dom";
-import houses from "../houses";
+import React, { useState } from 'react';
 import SliderItem from "./SliderItem"
-
-import '../styles/Slider.css'
-
+import SliderArrow from "../assets/slider-arrow.svg"
 
 
 
-function Slider({ picture }) {
 
-    let { id } = useParams();
+function Slider(props) {
 
-    const result = houses.filter(
-        house => house.id === id);
 
-    const selectedHouse = result[0];
+    const [currentPicture, setCurrentPicture] = useState(0)
+    const [pictures, setPictures] = useState(props.pictures)
+
+    function changePicture(value) {
+
+        if (currentPicture == 0 && value == -1) {
+            setCurrentPicture(pictures.length - 1)
+        } else if (currentPicture == pictures.length - 1 && value == 1) {
+            setCurrentPicture(0)
+        } else {
+            setCurrentPicture(currentPicture + value)
+        }
+    }
+
 
     return (
+        <div className="slider">
 
-        <div className='slider-inner'>
-            {selectedHouse.pictures.map((picture, index) => (
-                <SliderItem picture={picture} key={index} />
-            ))}
+            <img src={SliderArrow} alt='Slider Arrow Left' className='arrow-left' onClick={() => changePicture(1)} />
+
+            <div className='slider-inner'>
+
+
+                <img src={pictures[currentPicture]} />
+                {currentPicture}
+
+
+            </div>
+
+            <img src={SliderArrow} alt='Slider Arrow Right' className='arrow-right' onClick={() => changePicture(-1)} />
         </div>
 
     )

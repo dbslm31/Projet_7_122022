@@ -4,7 +4,7 @@ import Slider from "./Slider";
 import Collapse from "./Collapse"
 import Tag from "./Tag"
 import Rating from "./Rating"
-import SliderArrow from "../assets/slider-arrow.svg"
+
 import houses from "../houses";
 import '../styles/House.css'
 
@@ -21,11 +21,13 @@ function House() {
     return (
         <div className='house-container'>
             <div className='image-slider'>
-                <img src={SliderArrow} alt='Slider Arrow Left' className='arrow-left' />
 
-                <Slider />
 
-                <img src={SliderArrow} alt='Slider Arrow Right' className='arrow-right' />
+                <Slider
+                    pictures={selectedHouse.pictures}
+                />
+
+
             </div>
 
             <div className='house-columns'>
@@ -37,7 +39,7 @@ function House() {
                         {selectedHouse.location}
                     </div>
                     <div className="house-tags">
-                        {selectedHouse.tags.map((tag, index) => (
+                        {selectedHouse.tags.map((tag) => (
                             <Tag
                                 tag={tag}
                             />
