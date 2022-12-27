@@ -1,3 +1,7 @@
+.house-title {
+    margin-left: 220px;
+}
+
 .house-columns {
     display: flex;
     flex-direction: row;
@@ -36,10 +40,16 @@
     color: #FF6060;
 }
 
+.title-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .house-host {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-right: 220px;
 }
 
 .host-name {
@@ -79,19 +89,17 @@
     overflow: visible;
 }
 
-.arrow-left {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    background-color: red;
-    cursor: pointer;
+.house-rating {
+    display: flex;
+    justify-content: right;
+    margin-top: 40px;
 }
 
-.arrow-right {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: rotate(180deg);
-    background-color: red;
-    cursor: pointer;
+.house-description {
+    width: 582px;
+}
+
+.house-equipments {
+    margin-left: 45px;
+    width: 582px;
 }

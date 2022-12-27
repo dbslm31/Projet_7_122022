@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SliderItem from "./SliderItem"
 import SliderArrow from "../assets/slider-arrow.svg"
+import '../styles/Slider.css'
 
 
 
@@ -26,18 +26,18 @@ function Slider(props) {
     return (
         <div className="slider">
 
-            <img src={SliderArrow} alt='Slider Arrow Left' className='arrow-left' onClick={() => changePicture(1)} />
+            <img src={SliderArrow} alt='Slider Arrow Right' className='arrow-right' onClick={() => changePicture(-1)} />
 
             <div className='slider-inner'>
 
 
-                <img src={pictures[currentPicture]} />
+                <img src={pictures[currentPicture]} className="slider-picture" />
 
 
 
             </div>
 
-            <img src={SliderArrow} alt='Slider Arrow Right' className='arrow-right' onClick={() => changePicture(-1)} />
+            <img src={SliderArrow} alt='Slider Arrow Left' className='arrow-left' onClick={() => changePicture(1)} />
         </div>
 
     )

@@ -1,8 +1,31 @@
-.slider-inner {
+.slider {
     height: 415px;
     margin: auto;
     max-width: 1240px;
     overflow: hidden;
     border-radius: 25px;
     display: flex;
+    position: relative;
+}
+
+
+.slider-picture {
+    height: 415px;
+    width: 1240px;
+    object-fit: cover;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    cursor: pointer;
 }

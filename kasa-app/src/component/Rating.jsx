@@ -13,7 +13,7 @@ function RatingStars(props) {
         if (i <= rating) {
             starStyle = { filter: 'invert(0)' };
         } else {
-            starStyle = { filter: 'grayscale(1)' };
+            starStyle = { filter: 'grayscale(1) brightness(1.4)' };
         }
         stars.push(
             <img src={RedStar} key={i} className="star" style={starStyle} />

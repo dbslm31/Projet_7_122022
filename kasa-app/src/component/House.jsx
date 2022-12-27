@@ -29,12 +29,17 @@ function House() {
 
 
             </div>
-
+            <div className="title-container">
+                <div className='house-title'>
+                    {selectedHouse.title}
+                </div>
+                <div className='house-host'>
+                    <img src={selectedHouse.host.picture} alt='Host Profil' className='host-pic' />
+                    <p className='host-name'>{selectedHouse.host.name}</p>
+                </div>
+            </div>
             <div className='house-columns'>
                 <div className="house-left-column">
-                    <div className='house-title'>
-                        {selectedHouse.title}
-                    </div>
                     <div className='house-location'>
                         {selectedHouse.location}
                     </div>
@@ -55,10 +60,6 @@ function House() {
                 </div>
 
                 <div className="house-right-column">
-                    <div className='house-host'>
-                        <img src={selectedHouse.host.picture} alt='Host Profil' className='host-pic' />
-                        <p className='host-name'>{selectedHouse.host.name}</p>
-                    </div>
                     <div className='house-rating'>
                         <RatingStars
                             rating={selectedHouse.rating} />
