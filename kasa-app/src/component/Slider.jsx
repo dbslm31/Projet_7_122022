@@ -32,7 +32,7 @@ function Slider(props) {
 
 
                 <img src={pictures[currentPicture]} />
-                {currentPicture}
+
 
 
             </div>

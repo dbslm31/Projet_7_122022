@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Tag.css'
-import houses from "../houses";
-import RedStar from "../assets/red-star.svg";
-import GrayStar from "../assets/gray-star.svg"
+import RedStar from "../assets/red-star.svg"
 
 
-function Rating(props) {
+function RatingStars(props) {
+    const { rating } = props;
 
-    return (
-        <div className='rating-container'>
-            <img src={props.img} alt='Rating Star' className='rating-red-star' />
-        </div>
+    const totalStars = 5;
+    const stars = [];
+    for (let i = 1; i <= totalStars; i++) {
+        let starStyle = {};
+        if (i <= rating) {
+            starStyle = { filter: 'invert(0)' };
+        } else {
+            starStyle = { filter: 'grayscale(1)' };
+        }
+        stars.push(
+            <img src={RedStar} key={i} className="star" style={starStyle} />
+        );
+    }
 
-    )
-
+    return <div className="rating">{stars}</div>;
 }
 
-export default Rating
+export default RatingStars

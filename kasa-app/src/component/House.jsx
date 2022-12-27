@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Slider from "./Slider";
 import Collapse from "./Collapse"
 import Tag from "./Tag"
-import Rating from "./Rating"
+import RatingStars from "./Rating"
 
 import houses from "../houses";
 import '../styles/House.css'
@@ -60,7 +60,8 @@ function House() {
                         <p className='host-name'>{selectedHouse.host.name}</p>
                     </div>
                     <div className='house-rating'>
-                        <Rating />
+                        <RatingStars
+                            rating={selectedHouse.rating} />
                     </div>
                     <div className="house-equipments">
                         <Collapse
