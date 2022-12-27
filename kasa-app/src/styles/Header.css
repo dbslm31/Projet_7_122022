@@ -34,3 +34,41 @@
 .header-logo {
     width: 150px;
 }
+
+@media screen and (max-width: 480px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 335px;
+        margin: 30px;
+
+    }
+
+    .header-logo {
+        width: 145px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+
+    .menu-item>a {
+        margin-right: 10px;
+        font-size: 12px;
+        color: #FF6060;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .menu-item>a:hover {
+        color: #FF6060;
+        text-decoration: underline;
+
+    }
+
+}

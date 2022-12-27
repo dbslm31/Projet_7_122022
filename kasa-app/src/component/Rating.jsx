@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Tag.css'
+import '../styles/Rating.css'
 import RedStar from "../assets/red-star.svg"
 
 

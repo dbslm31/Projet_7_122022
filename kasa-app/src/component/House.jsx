@@ -21,25 +21,18 @@ function House() {
     return (
         <div className='house-container'>
             <div className='image-slider'>
-
-
                 <Slider
                     pictures={selectedHouse.pictures}
                 />
-
-
             </div>
-            <div className="title-container">
-                <div className='house-title'>
-                    {selectedHouse.title}
-                </div>
-                <div className='house-host'>
-                    <img src={selectedHouse.host.picture} alt='Host Profil' className='host-pic' />
-                    <p className='host-name'>{selectedHouse.host.name}</p>
-                </div>
-            </div>
-            <div className='house-columns'>
-                <div className="house-left-column">
+
+            <div className='title-rating-container'>
+                <div className="house-column-title">
+                    <div className="title-container">
+                        <div className='house-title'>
+                            {selectedHouse.title}
+                        </div>
+                    </div>
                     <div className='house-location'>
                         {selectedHouse.location}
                     </div>
@@ -50,31 +43,40 @@ function House() {
                             />
                         ))}
                     </div>
-                    <div className="house-description">
-                        <Collapse
-                            title="Description"
-                            content={selectedHouse.description}
-                        />
-
-                    </div>
                 </div>
 
-                <div className="house-right-column">
+                <div className="house-rating-column">
+                    <div className='house-host'>
+                        <img src={selectedHouse.host.picture} alt='Host Profil' className='host-pic' />
+                        <p className='host-name'>{selectedHouse.host.name}</p>
+                    </div>
                     <div className='house-rating'>
                         <RatingStars
                             rating={selectedHouse.rating} />
                     </div>
-                    <div className="house-equipments">
-                        <Collapse
-                            title="Équipements"
-                            content={selectedHouse.equipments.map(equipment => (
-                                <p>{equipment}</p>
-                            ))}
-                        />
-
-                    </div>
                 </div>
             </div>
+            <div className='description-container'>
+                <div className="house-description">
+                    <Collapse
+                        title="Description"
+                        content={selectedHouse.description}
+                    />
+
+                </div>
+                <div className="house-equipments">
+                    <Collapse
+                        title="Équipements"
+                        content={selectedHouse.equipments.map(equipment => (
+                            <p>{equipment}</p>
+                        ))}
+                    />
+
+                </div>
+            </div>
+
+
+
 
 
         </div>

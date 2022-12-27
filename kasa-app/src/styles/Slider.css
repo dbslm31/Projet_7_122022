@@ -29,3 +29,45 @@
     right: 2%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+
+    .slider {
+        height: 255px;
+        margin: auto;
+        max-width: 1240px;
+        overflow: hidden;
+        border-radius: 25px;
+        display: flex;
+        position: relative;
+    }
+
+    .slider-picture {
+        height: 255px;
+        width: 335px;
+        object-fit: cover;
+    }
+
+    .slider-inner {
+        height: 255px;
+        width: 335px;
+    }
+
+    .arrow-left {
+        position: absolute;
+        top: 45%;
+        left: 2%;
+        width: 15px;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    .arrow-right {
+        position: absolute;
+        top: 45%;
+        right: 2%;
+        width: 15px;
+        cursor: pointer;
+    }
+
+}

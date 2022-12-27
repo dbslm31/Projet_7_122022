@@ -1,24 +1,35 @@
-.house-title {
-    margin-left: 220px;
-}
-
-.house-columns {
+.title-rating-container {
     display: flex;
     flex-direction: row;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     max-width: 1240px;
 }
 
-.house-left-column {
-    width: 50%;
+.house-column-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+    margin-right: auto;
+    max-width: 1240px;
+}
+
+.house-rating-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 220px;
+    max-width: 1240px;
+
 
 }
 
-.house-right-column {
-    width: 50%;
-
-}
 
 .house-title {
     font-family: 'Montserrat';
@@ -43,13 +54,14 @@
 .title-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .house-host {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-right: 220px;
+    margin-top: 10px;
 }
 
 .host-name {
@@ -92,7 +104,7 @@
 .house-rating {
     display: flex;
     justify-content: right;
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .house-description {
@@ -102,4 +114,109 @@
 .house-equipments {
     margin-left: 45px;
     width: 582px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .title-rating-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .house-title {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .image-slider {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 255px;
+        overflow: visible;
+    }
+
+    .house-column-title {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: auto;
+        max-width: 335px;
+    }
+
+    .house-title {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .house-location {
+        font-size: 14px;
+    }
+
+    .house-rating-column {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-left: 30px;
+        margin-right: auto;
+        max-width: 335px;
+
+    }
+
+    .house-rating>.rating {
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: -15px;
+    }
+
+    .house-description {
+        margin: auto;
+        max-width: 335px;
+    }
+
+    .house-equipments {
+        margin: auto;
+        max-width: 335px;
+    }
+
+    .house-host {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    .host-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .host-name {
+        margin-left: 0px;
+        margin-right: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        color: #FF6060;
+        padding-left: 15px;
+    }
+
 }
