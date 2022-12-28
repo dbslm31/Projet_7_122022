@@ -79,8 +79,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 84%;
-        padding-top: 20px;
+        width: 80%;
+        padding-top: 30px;
+        padding-bottom: 30px;
         margin: auto;
 
     }

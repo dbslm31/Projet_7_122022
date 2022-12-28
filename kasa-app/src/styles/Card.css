@@ -66,3 +66,23 @@
     }
 
 }
+
+@media screen and (min-width: 481px) and (max-width: 1025px) {
+
+    .card {
+        width: 59vh;
+        height: 300px;
+        margin-left: -4px;
+        position: relative;
+        margin-bottom: 20px;
+
+    }
+
+    .card-cover {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+}

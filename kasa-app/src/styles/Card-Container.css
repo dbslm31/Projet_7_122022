@@ -19,3 +19,14 @@
         margin-top: 0px;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 1025px) {
+    .card-container {
+
+        background-color: #ffffff;
+        margin-top: 0px;
+        width: 90%;
+        padding-top: 30px;
+        justify-content: center;
+    }
+}

@@ -35,3 +35,25 @@
 
 
 }
+
+@media screen and (min-width: 481px) and (max-width: 1025px) {
+
+    .home>.banner-container {
+        margin-bottom: 30px;
+    }
+
+    .home>.collapse {
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-bottom: 100px;
+
+
+    }
+
+}
