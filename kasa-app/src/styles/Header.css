@@ -73,3 +73,42 @@
     }
 
 }
+
+@media screen and (min-width: 481px) and (max-width: 1025px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 84%;
+        padding-top: 20px;
+        margin: auto;
+
+    }
+
+    .header-logo {
+        width: 180px;
+        padding-left: 15px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+
+    .menu-item>a {
+        margin-right: 10px;
+        font-size: 14px;
+        color: #FF6060;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .menu-item>a:hover {
+        color: #FF6060;
+        text-decoration: underline;
+
+    }
+}

@@ -71,3 +71,30 @@
     }
 
 }
+
+@media screen and (min-width: 481px) and (max-width: 1025px) {
+    .slider {
+
+        margin: auto;
+        max-width: 90%;
+
+    }
+
+    .arrow-left {
+        position: absolute;
+        top: 45%;
+        left: 2%;
+        width: 20px;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    .arrow-right {
+        position: absolute;
+        top: 45%;
+        right: 2%;
+        width: 20px;
+        cursor: pointer;
+    }
+
+}
