@@ -71,3 +71,25 @@
         padding-bottom: 0px;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 1025px) {
+
+    .error-title {
+        font-size: 180px;
+        margin-top: 150px;
+    }
+
+    .error-txt {
+        font-size: 20px;
+        text-align: center;
+        padding-right: 30px;
+        padding-left: 30px;
+
+    }
+
+    .home-link>a {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+
+}
