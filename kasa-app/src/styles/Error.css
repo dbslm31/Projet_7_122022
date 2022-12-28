@@ -50,3 +50,24 @@
     text-decoration-line: underline;
     color: #FF6060;
 }
+
+@media screen and (max-width: 480px) {
+    .error-title {
+        font-size: 96px;
+        margin-top: 150px;
+    }
+
+    .error-txt {
+        font-size: 18px;
+        text-align: center;
+        padding-right: 45px;
+        padding-left: 45px;
+        width: 335px;
+
+    }
+
+    .home-link>a {
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+}
