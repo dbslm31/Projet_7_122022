@@ -49,3 +49,43 @@
     z-index: 10;
 
 }
+
+@media screen and (max-width: 480px) {
+
+    .img-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 335px;
+        height: 111px;
+        position: relative;
+
+    }
+
+    .color-overlay {
+
+        border-radius: 10px;
+
+    }
+
+    .banner {
+
+        width: 335px;
+        height: 111px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .banner-overlay {
+        padding-right: 100px;
+        color: white;
+        font-weight: 500;
+        font-size: 24px;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        z-index: 10;
+
+    }
+
+}

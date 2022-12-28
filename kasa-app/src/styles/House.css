@@ -118,6 +118,7 @@
 
 @media screen and (max-width: 480px) {
 
+
     .title-rating-container {
         display: flex;
         flex-direction: column;
@@ -182,11 +183,14 @@
     .house-description {
         margin: auto;
         max-width: 335px;
+        padding-right: 2px;
     }
 
     .house-equipments {
         margin: auto;
         max-width: 335px;
+        padding-bottom: 30px;
+        padding-right: 2px;
     }
 
     .house-host {

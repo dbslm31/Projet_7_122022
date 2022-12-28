@@ -47,3 +47,22 @@
     z-index: 1;
 
 }
+
+@media screen and (max-width: 480px) {
+
+    .card {
+        width: 335px;
+        height: 255px;
+        position: relative;
+        margin-bottom: 20px;
+
+    }
+
+    .card-cover {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+}

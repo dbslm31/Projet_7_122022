@@ -2,10 +2,11 @@ import React from 'react';
 import Banner from "./Banner";
 import BannerAbout from "../assets/BANNER-ABOUT.png"
 import Collapse from "./Collapse"
+import '../styles/About.css'
 
 function About() {
     return (
-        <div className="Home">
+        <div className="home">
             <Banner
                 img={BannerAbout}
             />
