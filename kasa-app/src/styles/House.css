@@ -1,6 +1,9 @@
 .title-rating-container {
     display: flex;
     flex-direction: row;
+    max-width: 1240px;
+    justify-content: center;
+    margin: auto;
 }
 
 .description-container {
@@ -9,23 +12,23 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
     max-width: 1240px;
 }
 
 .house-column-title {
     display: flex;
     flex-direction: column;
-    margin-left: 220px;
+
     margin-right: auto;
-    max-width: 1240px;
+
 }
 
 .house-rating-column {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    margin-right: 220px;
-    max-width: 1240px;
+
 
 
 }

@@ -10,7 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 200px 40px 230px;
+    margin: auto;
+    max-width: 1240px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .menu {

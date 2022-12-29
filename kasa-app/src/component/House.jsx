@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Slider from "./Slider";
 import Collapse from "./Collapse"
 import Tag from "./Tag"
@@ -15,8 +15,12 @@ function House() {
     const result = houses.filter(
         house => house.id === id);
 
+
     const selectedHouse = result[0];
 
+    if (!result.length) {
+        return <Navigate to="/404" />;
+    }
 
     return (
         <div className='house-container'>

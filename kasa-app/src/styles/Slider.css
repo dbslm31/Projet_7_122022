@@ -8,6 +8,10 @@
     position: relative;
 }
 
+.slider-inner {
+    width: 80%;
+}
+
 
 .slider-picture {
     height: 415px;
