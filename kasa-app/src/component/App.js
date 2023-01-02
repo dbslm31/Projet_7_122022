@@ -4,7 +4,6 @@ import About from "./About";
 import Error404 from "./Error404";
 import House from "./House";
 import Footer from "./Footer";
-import houses from "../houses"
 import { Routes, Route } from "react-router-dom"
 
 

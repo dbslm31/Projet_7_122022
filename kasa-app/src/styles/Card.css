@@ -70,8 +70,9 @@
 @media screen and (min-width: 481px) and (max-width: 1025px) {
 
     .card {
-        width: 59vh;
+
         height: 300px;
+        width: 300px;
         margin-left: -4px;
         position: relative;
         margin-bottom: 20px;

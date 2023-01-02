@@ -3,19 +3,17 @@ import SliderArrow from "../assets/slider-arrow.svg"
 import '../styles/Slider.css'
 
 
-
-
 function Slider(props) {
 
 
     const [currentPicture, setCurrentPicture] = useState(0)
-    const [pictures, setPictures] = useState(props.pictures)
+    const [pictures] = useState(props.pictures)
 
     function changePicture(value) {
 
-        if (currentPicture == 0 && value == -1) {
+        if (currentPicture === + 0 && value === -1) {
             setCurrentPicture(pictures.length - 1)
-        } else if (currentPicture == pictures.length - 1 && value == 1) {
+        } else if (currentPicture === pictures.length - 1 && value === 1) {
             setCurrentPicture(0)
         } else {
             setCurrentPicture(currentPicture + value)
@@ -31,7 +29,7 @@ function Slider(props) {
             <div className='slider-inner'>
 
 
-                <img src={pictures[currentPicture]} className="slider-picture" />
+                <img src={pictures[currentPicture]} className="slider-picture" alt="Carrousel Accomodation" />
 
 
 

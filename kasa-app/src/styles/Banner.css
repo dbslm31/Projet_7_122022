@@ -4,7 +4,8 @@
 }
 
 .banner-container {
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 .img-container {
@@ -92,11 +93,16 @@
 
 @media screen and (min-width: 481px) and (max-width: 1025px) {
 
+    .banner-container {
+        width: 100%;
+        margin: auto;
+    }
+
     .img-container {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 90%;
         height: 230px;
         position: relative;
 
