@@ -79,28 +79,28 @@ function House() {
                 </div>
             </div>
 
-            <div className='description-container'>
-                <div className="house-description">
 
-                    {/* Collapse components */}
-                    <Collapse
-                        key={id + 1}
-                        title="Description"
-                        content={selectedHouse.description}
-                    />
+            <div className="house-description">
 
-                </div>
-                <div className="house-equipments">
-                    <Collapse
+                {/* Collapse components */}
+                <Collapse
 
-                        title="Équipements"
-                        content={selectedHouse.equipments.map(equipment => (
-                            <p key={id + 2}>{equipment}</p>
-                        ))}
-                    />
+                    title="Description"
+                    content={selectedHouse.description}
+                />
 
-                </div>
             </div>
+            <div className="house-equipments">
+                <Collapse
+
+                    title="Équipements"
+                    content={selectedHouse.equipments.map(equipment => (
+                        <p key={equipment}>{equipment}</p>
+                    ))}
+                />
+
+            </div>
+
 
 
 

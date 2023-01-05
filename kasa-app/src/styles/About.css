@@ -1,4 +1,9 @@
-@media screen and (max-width: 480px) {
+.home>.collapse {
+    width: 90%;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
 
     .home {
         display: flex;
@@ -36,14 +41,14 @@
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 1025px) {
+@media screen and (min-width: 601px) and (max-width: 1025px) {
 
     .home>.banner-container {
         margin-bottom: 30px;
     }
 
     .home>.collapse {
-        width: 80%;
+        width: 90%;
         margin-left: auto;
     }
 

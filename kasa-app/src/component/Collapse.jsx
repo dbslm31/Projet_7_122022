@@ -13,7 +13,10 @@ function Collapse(props) {
 
     return (
         <div className="collapse">
-            <button onClick={handleOpen} className="open-btn"><p className="collapse-title">{props.title}</p><img src={Arrow} alt='arrow' className={open ? "open-arrow" : "closed-arrow"} /></button>
+            <button onClick={handleOpen} className="open-btn">
+                <p className="collapse-title">{props.title}</p>
+                <img src={Arrow} alt='arrow' className={open ? "open-arrow" : "closed-arrow"} />
+            </button>
             <div className={open ? "collapse-content" : "hidden-content"}>{props.content}</div>
         </div>
 
