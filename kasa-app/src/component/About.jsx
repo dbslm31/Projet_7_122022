@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from "./Banner";
-import BannerAbout from "../assets/BANNER-ABOUT.png"
-import Collapse from "./Collapse"
+import Collapse from "./Collapse";
+import BannerAbout from "../assets/BANNER-ABOUT.png";
 import '../styles/About.css'
 
 function About() {

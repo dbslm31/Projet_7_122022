@@ -4,8 +4,10 @@ import '../styles/Collapse.css'
 
 
 function Collapse(props) {
+    //useState hook to control the visibility of the content
     const [open, setOpen] = React.useState(false);
 
+    //To toggle the open state of the component when function called
     const handleOpen = () => {
         setOpen(!open);
     };
