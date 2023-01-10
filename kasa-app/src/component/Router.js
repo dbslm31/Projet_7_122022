@@ -8,7 +8,7 @@ import House from "./House";
 function Router() {
     return (
 
-        <section className='main'>
+        <section>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/a-propos" element={<About />} />

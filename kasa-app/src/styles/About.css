@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat';
+}
+
 .home>.collapse {
     width: 90%;
     margin-left: auto;

@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat';
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
